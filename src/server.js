@@ -2,7 +2,7 @@
 const app = require("./app")
 
 //Porta dinamica
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 //Subir Servidor
 app.listen(port)

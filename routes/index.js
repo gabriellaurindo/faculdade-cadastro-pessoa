@@ -9,8 +9,8 @@ router.get('/', (req, res,) => {
    res.send({Descrição:'API REST Privada!', Version: '1.0.0'})
 })
 
-router.post('/', (req, res,) => {
-   cadastro_pessoa(req,res)
+router.post('/', async (req, res,) => {
+   await cadastro_pessoa(req,res)
 })
 
    

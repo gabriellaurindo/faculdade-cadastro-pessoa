@@ -2,9 +2,9 @@
 const Pessoa = require("../models/Pessoa")
 
 //Função de login
-function  cadastro_pessoa (req,res){
+async function  cadastro_pessoa (req,res){
     const {nome,idade} = req.body
-    Pessoa.create({nome, idade}).catch((err)=>{
+    await Pessoa.create({nome, idade}).catch((err)=>{
         console.log("Houve um erro: " + err);
         res.statusCode = 401
         res.send({Error:err})
