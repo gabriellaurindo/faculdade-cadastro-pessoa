@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # variáveis de ambiente
-config/vars/
+config/vars/env.json
