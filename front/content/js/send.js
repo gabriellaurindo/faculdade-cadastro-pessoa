@@ -2,7 +2,7 @@ async function send(){
     try{
         const nome = document.getElementById("inputNome").value
         const idade = document.getElementById("inputIdade").value
-        const result = await fetch('http://localhost:8080/cadastro-pessoa',{
+        const result = await fetch('https://faculdade-cadastro-pessoa.herokuapp.com',{
             headers:{
                 "Content-Type": "application/json"
             },
@@ -14,4 +14,7 @@ async function send(){
      }catch(err){
          console.log(err)
      }
+     document.getElementById("inputNome").value = "";
+     document.getElementById("inputIdade").value = "";
+     document.getElementById("gridCheck").checked=false;
 }
