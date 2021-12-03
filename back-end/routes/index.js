@@ -2,7 +2,6 @@
 const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
-const User = require("../api/models/User")
 const cadastro_pessoa = require("../api/controllers/cadastro_pessoa")
 
 //Rota Raiz

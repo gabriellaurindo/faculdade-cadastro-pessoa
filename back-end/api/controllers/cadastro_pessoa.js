@@ -7,7 +7,7 @@ function  cadastro_pessoa (req,res){
         console.log("Houve um erro: " + err);
         res.statusCode = 401
         res.send({Error:err})
-        break
+        return
     });
         res.statusCode = 201
         res.send({Descricao:"Registro criado com sucesso!"})  
